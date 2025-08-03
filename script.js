@@ -13,7 +13,7 @@ textarea.addEventListener("input", () => {
   charCount.textContent = `Characters: ${currentLength} / ${maxLength}`;
 
   // Optional warning color
-  charCount.style.color = currentLength > 80 ? "red" : "black";
+  charCount.style.color = currentLength > 90 ? "red" : "black";
 
   //  Word count (ignore extra spaces)
   const words = text.trim().split(/\s+/).filter(word => word.length > 0);
